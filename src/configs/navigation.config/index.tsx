@@ -5,7 +5,7 @@ const navigationConfig: NavigationTree[] = [
   {
     key: 'dashboard',
     path: '/dashboard',
-    title: 'Dashboard',
+    title: 'پیشخوان',
     translateKey: '',
     icon: IconDashboard,
     authority: [],
@@ -14,7 +14,25 @@ const navigationConfig: NavigationTree[] = [
   {
     key: 'users',
     path: '/users',
-    title: 'Users',
+    title: 'کاربران',
+    translateKey: '',
+    icon: IconUser,
+    authority: [],
+    subMenu: []
+  },
+  {
+    key: 'biz',
+    path: '/biz',
+    title: 'کسب و کار',
+    translateKey: '',
+    icon: IconUser,
+    authority: [],
+    subMenu: []
+  },
+  {
+    key: 'service',
+    path: '/service',
+    title: 'خدمات',
     translateKey: '',
     icon: IconUser,
     authority: [],

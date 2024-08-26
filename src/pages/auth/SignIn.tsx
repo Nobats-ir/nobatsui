@@ -5,6 +5,7 @@ import {
   PasswordInput,
   Button,
   Title, Text,
+  Anchor,
 } from '@mantine/core';
 import classes from './SignIn.module.css';
 import * as yup from 'yup';
@@ -49,7 +50,7 @@ export default function SignIn() {
         <div className={classes.wrapper}>
           <Paper className={classes.form} radius={0} p={30}>
             <Title order={2} className={classes.title} ta="center" mt="md" mb={50}>
-              Welcome to Mantine Template
+              به نوبتز خوش آمدید
             </Title>
             <Text ta="center" mt="md" mb={50}>
               To get more information about the template please check the <a
@@ -57,17 +58,16 @@ export default function SignIn() {
             </Text>
             <TextInput {...form.getInputProps('email')} name={'email'} label="Email address" withAsterisk
                        placeholder="hello@gmail.com" size="md"/>
-            <PasswordInput {...form.getInputProps('password')} name={'password'} label="Password"
-                           placeholder="Your password" mt="md" size="md"/>
+            {/* <PasswordInput {...form.getInputProps('password')} name={'password'} label="Password" placeholder="Your password" mt="md" size="md"/> */}
             <Button loading={loading} type={'submit'} fullWidth mt="xl" size="md">
-              Login
+              ورود
             </Button>
-            {/*<Text ta="center" mt="md">*/}
-            {/*  Don&apos;t have an account?{' '}*/}
-            {/*  <Anchor<'a'> href="#" fw={700} onClick={(event) => event.preventDefault()}>*/}
-            {/*    Register*/}
-            {/*  </Anchor>*/}
-            {/*</Text>*/}
+            <Text ta="center" mt="md">
+             هنوز ثبت نام نکردید؟{' '}
+             <Anchor<'a'> href="#" fw={700} onClick={(event) => event.preventDefault()}>
+               ثبت نام
+             </Anchor>
+            </Text>
           </Paper>
         </div>
       </form>
