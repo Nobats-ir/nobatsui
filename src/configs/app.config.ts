@@ -10,7 +10,9 @@ export type AppConfig = {
 }
 
 const appConfig: AppConfig = {
-  layoutType: LayoutTypes.SimpleSideBar,
+  // layoutType: LayoutTypes.SimpleSideBar,
+  // layoutType: LayoutTypes.CollapsedSideBar,
+  layoutType: LayoutTypes.DeckedSideBar,
   // apiPrefix: 'https://nobats.ir/api/',
   apiPrefix: '',
   authenticatedEntryPath: '/dashboard',

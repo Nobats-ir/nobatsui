@@ -1,5 +1,5 @@
-import type {NavigationTree} from '@/@types/navigation';
-import {IconDashboard, IconUser} from '@tabler/icons-react';
+import type { NavigationTree } from '@/@types/navigation';
+import { IconBuildingStore, IconDashboard, IconPackage, IconUser } from '@tabler/icons-react';
 
 const navigationConfig: NavigationTree[] = [
   {
@@ -9,7 +9,36 @@ const navigationConfig: NavigationTree[] = [
     translateKey: '',
     icon: IconDashboard,
     authority: [],
-    subMenu: []
+    subMenu: [
+      {
+        key: 'dashboard',
+        path: '/dashboard',
+        title: 'گزارشات',
+        translateKey: '',
+        authority: [],
+      },
+      {
+        key: 'dashboard',
+        path: '/dashboard',
+        title: 'تنظیمات کلی',
+        translateKey: '',
+        authority: [],
+      },
+      {
+        key: 'dashboard',
+        path: '/dashboard',
+        title: 'راهنما',
+        translateKey: '',
+        authority: [],
+      },
+      {
+        key: 'dashboard',
+        path: '/dashboard',
+        title: 'اتصال به تلگرام',
+        translateKey: '',
+        authority: [],
+      }
+    ]
   },
   {
     key: 'users',
@@ -18,25 +47,84 @@ const navigationConfig: NavigationTree[] = [
     translateKey: '',
     icon: IconUser,
     authority: [],
-    subMenu: []
+    subMenu: [
+      {
+        key: 'users',
+        path: '/users',
+        title: 'کاربران من',
+        translateKey: '',
+        authority: [],
+      },
+      {
+        key: 'users',
+        path: '/reserved',
+        title: 'رزروها',
+        translateKey: '',
+        authority: [],
+      }
+    ]
   },
   {
     key: 'biz',
     path: '/biz',
     title: 'کسب و کار',
     translateKey: '',
-    icon: IconUser,
+    icon: IconBuildingStore,
     authority: [],
-    subMenu: []
+    subMenu: [
+      {
+        key: 'biz',
+        path: 'index',
+        title: 'لیست',
+        authority: [],
+        translateKey: '',
+      },
+      {
+        key: 'service',
+        path: 'new',
+        title: 'جدید',
+        translateKey: '',
+        authority: [],
+      },
+      {
+        key: 'biz',
+        path: 'index',
+        title: 'پیکربندی',
+        authority: [],
+        translateKey: '',
+      }
+    ]
   },
   {
     key: 'service',
     path: '/service',
     title: 'خدمات',
     translateKey: '',
-    icon: IconUser,
+    icon: IconPackage,
     authority: [],
-    subMenu: []
+    subMenu: [
+      {
+        key: 'service',
+        path: 'index',
+        title: 'خدمات من',
+        translateKey: '',
+        authority: [],
+      },
+      {
+        key: 'service',
+        path: 'new',
+        title: 'جدید',
+        translateKey: '',
+        authority: [],
+      },
+      {
+        key: 'biz',
+        path: 'index',
+        title: 'پیکربندی',
+        authority: [],
+        translateKey: '',
+      }
+    ]
   },
 ];
 
