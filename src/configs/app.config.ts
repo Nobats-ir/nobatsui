@@ -11,7 +11,8 @@ export type AppConfig = {
 
 const appConfig: AppConfig = {
   layoutType: LayoutTypes.SimpleSideBar,
-  apiPrefix: 'https://nobats.ir/api/',
+  // apiPrefix: 'https://nobats.ir/api/',
+  apiPrefix: '',
   authenticatedEntryPath: '/dashboard',
   unAuthenticatedEntryPath: '/sign-in',
   enableMock: true,

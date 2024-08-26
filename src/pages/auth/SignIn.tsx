@@ -58,7 +58,7 @@ export default function SignIn() {
             </Text>
             <TextInput {...form.getInputProps('email')} name={'email'} label="Email address" withAsterisk
                        placeholder="hello@gmail.com" size="md"/>
-            {/* <PasswordInput {...form.getInputProps('password')} name={'password'} label="Password" placeholder="Your password" mt="md" size="md"/> */}
+            <PasswordInput {...form.getInputProps('password')} name={'password'} label="Password" placeholder="Your password" mt="md" size="md"/>
             <Button loading={loading} type={'submit'} fullWidth mt="xl" size="md">
               ورود
             </Button>
