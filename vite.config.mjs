@@ -3,7 +3,10 @@ import react from '@vitejs/plugin-react';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
-  plugins: [react(), tsconfigPaths()],
+  plugins: [
+    react(), 
+    tsconfigPaths()
+  ],
   build: {
     rollupOptions: {
       output: {
@@ -31,3 +34,12 @@ export default defineConfig({
     setupFiles: './vitest.setup.mjs',
   },
 });
+
+// export default defineConfig({
+//   plugins: [react()],
+//   build: {
+//     rollupOptions: {
+//       external: ['react', 'react-dom'],
+//     },
+//   },
+// });
