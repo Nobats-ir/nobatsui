@@ -17,6 +17,28 @@ export const protectedRoutes = [
     component: lazy(() => import('@/pages/Dashboard/Dashboard')),
     authority: [],
   },
+
+
+  {
+    key: 'bizindex',
+    path: '/biz/index',
+    component: lazy(() => import('@/pages/Biz/Index')),
+    authority: [],
+  },
+  {
+    key: 'bizconfig',
+    path: '/biz/config',
+    component: lazy(() => import('@/pages/Biz/Config')),
+    authority: [],
+  },
+  {
+    key: 'biznew',
+    path: '/biz/new',
+    component: lazy(() => import('@/pages/Biz/New')),
+    authority: [],
+  },
+
+
   {
     key: 'users',
     path: '/users',
