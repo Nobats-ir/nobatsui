@@ -13,11 +13,11 @@ const appConfig: AppConfig = {
   // layoutType: LayoutTypes.SimpleSideBar,
   // layoutType: LayoutTypes.CollapsedSideBar,
   layoutType: LayoutTypes.DeckedSideBar,
-  apiPrefix: 'https://nobats.ir/api/',
-  // apiPrefix: '',
+  // apiPrefix: 'https://nobats.ir/api/',
+  apiPrefix: '',
   authenticatedEntryPath: '/dashboard',
   unAuthenticatedEntryPath: '/sign-in',
-  enableMock: false,
+  enableMock: true,
   locale: 'fa',
 }
 
