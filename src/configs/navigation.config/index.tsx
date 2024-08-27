@@ -11,6 +11,13 @@ const navigationConfig: NavigationTree[] = [
     authority: [],
     subMenu: [
       {
+        key: 'dashboardindex',
+        path: 'index',
+        title: 'پیشخوان',
+        translateKey: '',
+        authority: [],
+      },
+      {
         key: 'dashboardreports',
         path: 'reports',
         title: 'گزارشات',
