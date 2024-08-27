@@ -11,28 +11,28 @@ const navigationConfig: NavigationTree[] = [
     authority: [],
     subMenu: [
       {
-        key: 'reports',
+        key: 'dashboardreports',
         path: 'reports',
         title: 'گزارشات',
         translateKey: '',
         authority: [],
       },
       {
-        key: 'config',
+        key: 'dashboardconfig',
         path: 'config',
         title: 'تنظیمات کلی',
         translateKey: '',
         authority: [],
       },
       {
-        key: 'help',
+        key: 'dashboardhelp',
         path: 'help',
         title: 'راهنما',
         translateKey: '',
         authority: [],
       },
       {
-        key: 'telegram',
+        key: 'dashboardtelegram',
         path: 'telegram',
         title: 'اتصال به تلگرام',
         translateKey: '',

@@ -47,4 +47,33 @@ export const protectedRoutes = [
     component: lazy(() => import('@/pages/Biz/Biz')),
     authority: []
   },
+
+  ,
+  {
+    key: 'dashboardconfig',
+    path: '/dashboard/config',
+    component: lazy(() => import('@/pages/Dashboard/Config')),
+    authority: []
+  },
+  ,
+  {
+    key: 'dashboardhelp',
+    path: '/dashboard/help',
+    component: lazy(() => import('@/pages/Dashboard/Help')),
+    authority: []
+  },
+  ,
+  {
+    key: 'dashboardreports',
+    path: '/dashboard/reports',
+    component: lazy(() => import('@/pages/Dashboard/Reports')),
+    authority: []
+  },
+  ,
+  {
+    key: 'dashboardtelegram',
+    path: '/dashboard/telegram',
+    component: lazy(() => import('@/pages/Dashboard/Telegram')),
+    authority: []
+  },
 ]
