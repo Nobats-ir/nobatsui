@@ -71,4 +71,16 @@ export const protectedRoutes = [
     component: lazy(() => import('@/pages/Dashboard/Telegram')),
     authority: [],
   },
+  {
+    key: 'myusers',
+    path: '/users/myusers',
+    component: lazy(() => import('@/pages/Users/MyUsers')),
+    authority: [],
+  },
+  {
+    key: 'reserved',
+    path: '/users/reserved',
+    component: lazy(() => import('@/pages/Users/Reserved')),
+    authority: [],
+  },
 ];
