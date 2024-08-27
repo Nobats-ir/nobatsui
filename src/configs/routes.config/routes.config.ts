@@ -1,79 +1,74 @@
-import { lazy } from 'react'
-import authRoute from './authRoute'
-import type { Routes } from '@/@types/routes'
+import { lazy } from 'react';
+import authRoute from './authRoute';
+import type { Routes } from '@/@types/routes';
 
-export const publicRoutes: Routes = [...authRoute]
+export const publicRoutes: Routes = [...authRoute];
 
 export const protectedRoutes = [
   {
     key: 'dashboard',
     path: '/dashboard',
     component: lazy(() => import('@/pages/examples/Dashboard')),
-    authority: []
+    authority: [],
   },
   {
     key: 'users',
     path: '/users',
     component: lazy(() => import('@/pages/examples/Users')),
-    authority: []
+    authority: [],
   },
   {
     key: 'pages',
     path: '/dashboard/pages',
     component: lazy(() => import('@/pages/examples/Pages')),
-    authority: []
+    authority: [],
   },
   {
     key: 'files',
     path: '/dashboard/files',
     component: lazy(() => import('@/pages/examples/Files')),
-    authority: []
+    authority: [],
   },
   {
     key: 'manage',
     path: '/users/manage',
     component: lazy(() => import('@/pages/examples/Manage')),
-    authority: []
+    authority: [],
   },
   {
     key: 'service',
     path: '/service',
     component: lazy(() => import('@/pages/Service/Service')),
-    authority: []
+    authority: [],
   },
   {
     key: 'biz',
     path: '/biz',
     component: lazy(() => import('@/pages/Biz/Biz')),
-    authority: []
+    authority: [],
   },
-
-  ,
   {
     key: 'dashboardconfig',
     path: '/dashboard/config',
     component: lazy(() => import('@/pages/Dashboard/Config')),
-    authority: []
+    authority: [],
   },
-  ,
   {
     key: 'dashboardhelp',
     path: '/dashboard/help',
     component: lazy(() => import('@/pages/Dashboard/Help')),
-    authority: []
+    authority: [],
   },
-  ,
   {
     key: 'dashboardreports',
     path: '/dashboard/reports',
     component: lazy(() => import('@/pages/Dashboard/Reports')),
-    authority: []
+    authority: [],
   },
-  ,
   {
     key: 'dashboardtelegram',
     path: '/dashboard/telegram',
     component: lazy(() => import('@/pages/Dashboard/Telegram')),
-    authority: []
+    authority: [],
   },
-]
+];
