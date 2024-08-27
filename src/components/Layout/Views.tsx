@@ -29,6 +29,7 @@ const AllRoutes = (props: AllRoutesProps) => {
           element={<Navigate replace to={authenticatedEntryPath} />}
         />
         {protectedRoutes.map((route, index) => {
+          if (!route) return null;
           return <Route
             key={route.key + index}
             path={route.path}
