@@ -54,9 +54,10 @@ export default function Dashboard() {
   ));
 
   return (
-    <Card withBorder radius="md" className={classes.card}>
+  <>
+  <Card withBorder radius="md" className={classes.card}>
       <Group justify="space-between">
-        <Text className={classes.title}>Services</Text>
+        <Text className={classes.title}>امکانات</Text>
         <Anchor size="xs" c="dimmed" style={{ lineHeight: 1 }}>
           + 21 other services
         </Anchor>
@@ -65,5 +66,39 @@ export default function Dashboard() {
         {items}
       </SimpleGrid>
     </Card>
+    <Card withBorder radius="md" className={classes.card}>
+    <Group justify="space-between">
+      <Text className={classes.title}>کاربران</Text>
+      <Anchor size="xs" c="dimmed" style={{ lineHeight: 1 }}>
+        + 21 other services
+      </Anchor>
+    </Group>
+    <SimpleGrid cols={3} mt="md">
+      {items}
+    </SimpleGrid>
+  </Card>
+  <Card withBorder radius="md" className={classes.card}>
+    <Group justify="space-between">
+      <Text className={classes.title}>کسب و کار</Text>
+      <Anchor size="xs" c="dimmed" style={{ lineHeight: 1 }}>
+        + 21 other services
+      </Anchor>
+    </Group>
+    <SimpleGrid cols={3} mt="md">
+      {items}
+    </SimpleGrid>
+  </Card>
+  <Card withBorder radius="md" className={classes.card}>
+    <Group justify="space-between">
+      <Text className={classes.title}>خدمات</Text>
+      <Anchor size="xs" c="dimmed" style={{ lineHeight: 1 }}>
+        + 21 other services
+      </Anchor>
+    </Group>
+    <SimpleGrid cols={3} mt="md">
+      {items}
+    </SimpleGrid>
+  </Card>
+  </>
   );
 }
