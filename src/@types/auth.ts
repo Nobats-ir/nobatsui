@@ -3,8 +3,16 @@ export type SignInCredential = {
   password: string
 }
 
+export type OTPSignInCredential = {
+  mobile: number
+}
+
 export type ForgotPasswordReq = {
   email: string
+}
+
+export type OTPForgotPasswordReq = {
+  mobile: number
 }
 
 export interface SignInResponse {
@@ -30,3 +38,6 @@ export type SignUpCredential = {
   password: string
 }
 
+export type OTPSignUpCredential = {
+  mobile: number
+}
