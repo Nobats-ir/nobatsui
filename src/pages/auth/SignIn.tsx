@@ -27,7 +27,7 @@ export default function SignIn() {
 
   const form = useForm({
     initialValues: {
-      email: 'admin@test.com',
+      email: 'javid@nobats.ir',
       password: '12345qwerty',
     },
     validate: yupResolver(schema),
@@ -53,12 +53,10 @@ export default function SignIn() {
               به نوبتز خوش آمدید
             </Title>
             <Text ta="center" mt="md" mb={50}>
-              To get more information about the template please check the <a
-              href={'https://github.com/auronvila/mantine-template/wiki'}>documentation</a>
+              To get more information about the template please check the <a href={'https://github.com/auronvila/mantine-template/wiki'}>documentation</a>
             </Text>
-            <TextInput {...form.getInputProps('email')} name={'email'} label="Email address" withAsterisk
-                       placeholder="hello@gmail.com" size="md"/>
-            <PasswordInput {...form.getInputProps('password')} name={'password'} label="Password" placeholder="Your password" mt="md" size="md"/>
+            <TextInput {...form.getInputProps('email')} name={'email'} label="ایمیل" withAsterisk placeholder="javid@nobats.ir" size="md"/>
+            <PasswordInput {...form.getInputProps('password')} name={'password'} label="Password" placeholder="رمز" mt="md" size="md"/>
             <Button loading={loading} type={'submit'} fullWidth mt="xl" size="md">
               ورود
             </Button>

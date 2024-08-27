@@ -15,7 +15,7 @@ export default function SimpleSideBarBottomContent(){
         signOut()
       }}>
         <IconLogout className={classes.icon}/>
-        <span>Exit</span>
+        <span>خروج</span>
       </div>
     </>
   )
